@@ -1,0 +1,139 @@
+*   1% 1) arm-none-eabi-g++ -std=c++11 -Wextra -Wshadow -Wredundant-decls  -Weffc++ -fno-common -ffunction-sections -fdata-sections -ffast-math -fno-exceptions -fno-threadsafe-statics -fno-rtti -Os -ggdb -Wall -Werror -Wundef -DMAVLINK_COMM_NUM_BUFFERS=1 -mthumb -mcpu=cortex-m3 -msoft-float -c src/gfx.cpp -o obj/gfx.o
+src/gfx.cpp: In static member function 'static void Gfx::drawBitmapBytes(int16_t, int16_t, Gfx::ImageFormat, const Gfx::ImagePalette*, const uint8_t*, unsigned int, unsigned int, uint16_t*, uint16_t*)':
+src/gfx.cpp:124:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 8: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:125:25: note: here
+                         case 7: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:125:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 7: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:126:25: note: here
+                         case 6: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:126:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 6: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:127:25: note: here
+                         case 5: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:127:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 5: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:128:25: note: here
+                         case 4: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:128:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 4: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:129:25: note: here
+                         case 3: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:129:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 3: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:130:25: note: here
+                         case 2: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:130:50: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                         case 2: drawPixelAtCursor(pixel);
+                                 ~~~~~~~~~~~~~~~~~^~~~~~~
+src/gfx.cpp:131:25: note: here
+                         case 1: drawPixelAtCursor(pixel);
+                         ^~~~
+src/gfx.cpp:147:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 8: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:148:29: note: here
+                             case 7: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:148:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 7: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:149:29: note: here
+                             case 6: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:149:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 6: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:150:29: note: here
+                             case 5: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:150:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 5: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:151:29: note: here
+                             case 4: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:151:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 4: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:152:29: note: here
+                             case 3: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:152:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 3: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:153:29: note: here
+                             case 2: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:153:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 2: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gfx.cpp:154:29: note: here
+                             case 1: drawPixelAtCursor(ch.grayToColor(p->color(*b++)));
+                             ^~~~
+src/gfx.cpp:159:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 8: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:160:29: note: here
+                             case 7: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:160:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 7: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:161:29: note: here
+                             case 6: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:161:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 6: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:162:29: note: here
+                             case 5: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:162:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 5: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:163:29: note: here
+                             case 4: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:163:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 4: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:164:29: note: here
+                             case 3: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:164:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 3: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:165:29: note: here
+                             case 2: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+src/gfx.cpp:165:54: error: this statement may fall through [-Werror=implicit-fallthrough=]
+                             case 2: drawPixelAtCursor(p->color(*b++));
+                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+src/gfx.cpp:166:29: note: here
+                             case 1: drawPixelAtCursor(p->color(*b++));
+                             ^~~~
+cc1plus: all warnings being treated as errors
+ *** tup errors ***
+ *** Command ID=774 failed with return value 1
+tup error: Expected to write to file 'obj/gfx.o' from cmd 774 but didn't
+ *** Additionally, command 774 failed to process input dependencies. These should probably be fixed before addressing the command failure.
+ *** tup: 1 job failed.
+[ tup ] [0.000s] Scanning filesystem...
+[ tup ] [0.051s] Reading in new environment variables...
+[ tup ] [0.051s] No Tupfiles to parse.
+[ tup ] [0.051s] No files to delete.
+[ tup ] [0.052s] Executing Commands...
