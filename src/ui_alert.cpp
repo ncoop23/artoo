@@ -169,6 +169,7 @@ const UiAlertManager::Alert UiAlertManager::alerts[] = {
     // CH-7 & CH-8 RC control
     { Green, LowHaptic, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-7 Set Low", NULL },
     { Green, LowHapticMed, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-7 Set High", NULL },
+    { Green, LowHaptic, HintBoxBanner, 3000, DismissNone, NULL, NULL, "Idle Timeout Disabled", NULL },
     { Green, LowHaptic, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-8 Set Low", NULL },
     { Green, LowHapticMed, HintBoxBanner, 3000, DismissNone, NULL, NULL, "CH-8 Set High", NULL },
 

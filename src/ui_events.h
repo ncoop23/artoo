@@ -84,6 +84,7 @@ enum ID {
     ChargerConnected,
     CH7low,
     CH7high,
+    IdleTimeoutDisabled,
     CH8low,
     CH8high,
     TestAlert,

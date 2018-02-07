@@ -3,6 +3,7 @@
 #include "ui.h"
 #include "buttonmanager.h"
 #include "haptic.h"
+#include "battery.h"
 
 unsigned IdleTimeout::ticker;
 bool IdleTimeout::userDisabled;
@@ -20,13 +21,15 @@ void IdleTimeout::onButtonEvent(Button *b, Button::Event e)
         return;
     }
 
-    if (ButtonManager::button(Io::ButtonA).isHeldLong() &&
-        ButtonManager::button(Io::ButtonLoiter).isHeldLong() &&
-        ButtonManager::button(Io::ButtonCameraClick).isHeldLong())
+
+    if (ButtonManager::button(Io::ButtonPreset1).isHeldShort() &&
+        ButtonManager::button(Io::ButtonPreset2).isHeldShort())
     {
-        userDisabled = true;
-        Haptic::startPattern(Haptic::SingleMedium);
+	Ui::instance.pendEvent(Event::IdleTimeoutDisabled);
+	userDisabled = true;
     }
+
+
 }
 
 bool IdleTimeout::enabled()
@@ -47,6 +50,11 @@ bool IdleTimeout::enabled()
         return false;
     }
 
+	// if the battery charger is connected, don't idletimeout
+    if (Battery::instance.chargerIsPresent()) {
+	return false;
+    }
+
     return true;
 }
 
@@ -63,7 +71,7 @@ void IdleTimeout::tick()
         break;
 
     case IDLE_TIMEOUT:
-        PowerManager::shutdown();
+	PowerManager::shutdown();
         break;
     }
 }

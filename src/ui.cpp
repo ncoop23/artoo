@@ -477,6 +477,7 @@ void Ui::processAlert(Event::ID id)
     case Event::CH7low:
     case Event::CH7high:
     case Event::CH8low:
+    case Event::IdleTimeoutDisabled:
     case Event::CH8high:
         if (BIT(currentState) & (BIT(FullscreenAlert) | BIT(Arming) | BIT(Gimbal) | BIT(Telem))) {
             initFullscreenAlert(id);

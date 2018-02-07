@@ -70,11 +70,14 @@ const UiBottomBox::Msg UiBottomBox::msgs[] = {
     //{ Event::ControllerBatteryFailsafe, NoUserInput, UiAlertManager::NO_TIMEOUT, "Controller battery at 0%", "Auto-landing engaged" },
 
     /// Misc
+	// Added event to say idletimeout was disabled
+   // { Event::IdleTimeoutDisabled, NoUserInput, 5000, "Idle Timeout Disabled", NULL }, 
     { Event::LandingComplete, NoUserInput, 5000, "Landing complete", NULL },
     
     // RC Channels
     { Event::CH7low, NoUserInput, 5000, "CH-7 Off/Low", NULL },
     { Event::CH7high, NoUserInput, 5000, "CH-7 On/High", NULL },
+    { Event::IdleTimeoutDisabled, NoUserInput, 5000, "Idle Timeout Disabled", NULL },
     { Event::CH8low, NoUserInput, 5000, "CH-8 Off/Low", NULL },
     { Event::CH8high, NoUserInput, 5000, "CH-8 On/High", NULL },
 

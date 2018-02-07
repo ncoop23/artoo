@@ -112,6 +112,12 @@ void PowerManager::waitForCompleteStartup()
         Ui::instance.power.drawChargerConnected();
         Ui::instance.setBacklightsForState(sysState);
         drawn = true;
+	// This is new auto boot on charger connected when the system is off
+	if (sysState == Running) {
+	}
+	else {
+        	enterRunningState();
+	}
     }
 
     while (SysTime::now() < BatteryCheckInterval || btn.isPressed()) {
