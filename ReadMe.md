@@ -9,6 +9,15 @@ We will remove this warning from the repository when it is no longer required.
 ```
 
 
+Added 1/7/2018:
+
+The goal of this is for the controller to be used for a ground station that has power and when you turn on and off the power, the controller does the same.  Also the controller will not turn off when it's plugged in.  This got annoying.  You could put the idletimer back to 10 minutes and be pretty close to normal functionality.
+
+-Auto boot controller when plugged in.
+-Disable idle timeout when you hold preset 1 and 2 at the same time.  There is a notification of this. This will reset at next reboot.
+-Idletimeout to 30 seconds so the controller will turn off when you unplug it.
+-Disable idletimer when plugged in
+
 
 # artoo
 
